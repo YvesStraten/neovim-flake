@@ -1,4 +1,4 @@
-{ ... }: {
+{...}: {
   globals.mapleader = " ";
   maps = {
     normal = {
