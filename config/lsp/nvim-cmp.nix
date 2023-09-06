@@ -2,7 +2,7 @@
   plugins = {
     luasnip = {
       enable = true;
-      fromVscode = [{}];
+      fromVscode = [{ }];
     };
     lspkind = {
       enable = true;
@@ -20,26 +20,26 @@
       snippet.expand = "luasnip";
 
       sources = [
-        {name = "nvim_lsp";}
-        {name = "nvim_lsp_document_symbol";}
-        {name = "nvim_lsp_signature_help";}
-        {name = "luasnip";}
-        {name = "buffer";}
-        {name = "path";}
+        { name = "nvim_lsp"; }
+        { name = "nvim_lsp_document_symbol"; }
+        { name = "nvim_lsp_signature_help"; }
+        { name = "luasnip"; }
+        { name = "buffer"; }
+        { name = "path"; }
       ];
 
       window = {
         completion = {
-          winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,Search:None";
+          winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,Search:PmenuSel";
         };
       };
       formatting = {
-        fields = ["kind" "abbr" "menu"];
+        fields = [ "abbr" "kind" "menu" ];
       };
 
       mapping = {
         "<Tab>" = {
-          modes = ["i" "s"];
+          modes = [ "i" "s" ];
           action = ''
             function(fallback)
               if cmp.visible() then
@@ -57,7 +57,7 @@
           '';
         };
         "<S-Tab>" = {
-          modes = ["i" "s"];
+          modes = [ "i" "s" ];
           action = ''
             function(fallback)
               if cmp.visible() then
