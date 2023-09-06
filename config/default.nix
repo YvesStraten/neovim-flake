@@ -6,6 +6,7 @@
     ./lsp/lsp.nix
     ./lsp/null-ls.nix
     ./lsp/nvim-cmp.nix
+    ./lsp/dap.nix
   ];
 
   config = {

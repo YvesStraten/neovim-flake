@@ -17,6 +17,7 @@
     comment-nvim.enable = true;
 
     tmux-navigator.enable = true;
+    indent-blankline.enable = true;
 
     notify.enable = true;
     nvim-colorizer.enable = true;
