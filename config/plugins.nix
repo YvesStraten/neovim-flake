@@ -18,9 +18,31 @@
 
     tmux-navigator.enable = true;
 
+    notify.enable = true;
+    nvim-colorizer.enable = true;
     neogit.enable = true;
     nvim-autopairs.enable = true;
-    chadtree.enable = true;
+    neo-tree = {
+      enable = true;
+      enableModifiedMarkers = true;
+      autoCleanAfterSessionRestore = true;
+      closeIfLastWindow = true;
+      enableRefreshOnWrite = true;
+
+      window.width = 30;
+    };
+
+    gitsigns = {
+      enable = true;
+      signs = {
+        add.text = "+";
+        change.text = "~";
+        changedelete.text = "-";
+        delete.text = "-";
+        delete.showCount = true;
+      };
+    };
+
     undotree.enable = true;
     vimtex.enable = true;
     rainbow-delimiters.enable = true;

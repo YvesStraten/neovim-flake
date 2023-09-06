@@ -2,6 +2,10 @@
   globals.mapleader = " ";
   maps = {
     normal = {
+      "<esc>" = {
+        silent = true;
+        action = ":nohlsearch<CR>";
+      };
       "<tab>" = {
         silent = true;
         action = ":BufferNext<CR>";
@@ -29,7 +33,7 @@
       "<C-n>" = {
         silent = true;
         remap = true;
-        action = ":CHADopen<CR>";
+        action = ":Neotree toggle<CR>";
       };
 
       "<leader>sp" = {
