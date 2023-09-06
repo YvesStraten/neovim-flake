@@ -12,6 +12,7 @@
     options = {
       number = true;
       relativenumber = true;
+      conceallevel = 2;
       clipboard = {
         register = "unnamedplus";
         providers = {
@@ -21,6 +22,13 @@
       };
       tabstop = 2;
       shiftwidth = 2;
+    };
+
+    globals = {
+      tex_conceal = "abdgms";
+      tex_superscripts = "[0-9a-zA-W.,:;+-<>/()=]";
+      tex_subscripts = "[0-9aehijklmnoprstuvx,+-/().]";
+      tex_conceal_frac = 1;
     };
 
     extraConfigLuaPre = ''

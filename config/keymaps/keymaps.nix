@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   globals.mapleader = " ";
   maps = {
     normal = {
@@ -9,6 +9,11 @@
       "<S-tab>" = {
         silent = true;
         action = ":BufferPrevious<CR>";
+      };
+      "<leader>ll" = {
+        silent = true;
+        action = ":VimtexCompile<CR>";
+        desc = "Compile latex document";
       };
       "<leader>x" = {
         silent = true;
