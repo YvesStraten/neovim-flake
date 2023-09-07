@@ -1,6 +1,9 @@
 {
   plugins.telescope = {
     enable = true;
+    # extensions = {
+    #   project-nvim.enable = true;
+    # };
     keymaps = {
       "<leader>ff" = {
         action = "find_files";

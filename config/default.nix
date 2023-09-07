@@ -2,13 +2,6 @@
   imports = [
     ./plugins.nix
     ./keymaps/keymaps.nix
-    ./telescope/telescope.nix
-    ./lsp/lsp.nix
-    ./lsp/null-ls.nix
-    ./lsp/nvim-cmp.nix
-    ./lsp/dap.nix
-    ./neorg/neorg.nix
-    ./gitsigns/gitsigns.nix
   ];
 
   config = {

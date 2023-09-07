@@ -1,4 +1,15 @@
 { pkgs, ... }: {
+  imports = [
+    ./telescope/telescope.nix
+    ./lsp/lsp.nix
+    ./lsp/null-ls.nix
+    ./lsp/nvim-cmp.nix
+    ./lsp/dap.nix
+    ./neorg/neorg.nix
+    ./gitsigns/gitsigns.nix
+    ./dashboard/dashboard.nix
+  ];
+
   plugins = {
     barbar = {
       enable = true;
@@ -43,5 +54,7 @@
     vim-dadbod
     vim-dadbod-ui
     vim-dadbod-completion
+    bullets-vim
+    orgmode
   ];
 }
