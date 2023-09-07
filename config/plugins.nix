@@ -4,9 +4,9 @@
       enable = true;
       tabpages = true;
     };
-
     treesitter = {
       enable = true;
+      ensureInstalled = "all";
       disabledLanguages = [
         "latex"
       ];
@@ -32,18 +32,6 @@
 
       window.width = 30;
     };
-
-    gitsigns = {
-      enable = true;
-      signs = {
-        add.text = "+";
-        change.text = "~";
-        changedelete.text = "-";
-        delete.text = "-";
-        delete.showCount = true;
-      };
-    };
-
     undotree.enable = true;
     vimtex.enable = true;
     rainbow-delimiters.enable = true;

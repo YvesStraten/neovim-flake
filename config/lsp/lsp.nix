@@ -9,6 +9,8 @@
         lua-ls.enable = true;
         rnix-lsp.enable = true;
         texlab.enable = true;
+
+        pyright.enable = true;
       };
     };
     lsp-lines.enable = true;

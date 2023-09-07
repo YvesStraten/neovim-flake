@@ -7,6 +7,8 @@
     ./lsp/null-ls.nix
     ./lsp/nvim-cmp.nix
     ./lsp/dap.nix
+    ./neorg/neorg.nix
+    ./gitsigns/gitsigns.nix
   ];
 
   config = {
