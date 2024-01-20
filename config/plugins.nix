@@ -5,9 +5,8 @@
     ./lsp/null-ls.nix
     ./lsp/nvim-cmp.nix
     ./lsp/dap.nix
-    ./neorg/neorg.nix
     ./gitsigns/gitsigns.nix
-    ./dashboard/dashboard.nix
+    # ./dashboard/dashboard.nix
   ];
 
   plugins = {
@@ -30,9 +29,10 @@
     tmux-navigator.enable = true;
     indent-blankline.enable = true;
 
+    noice.enable = true;
+
     notify.enable = true;
     nvim-colorizer.enable = true;
-    neogit.enable = true;
     nvim-autopairs.enable = true;
     neo-tree = {
       enable = true;
@@ -41,20 +41,36 @@
       closeIfLastWindow = true;
       enableRefreshOnWrite = true;
 
-      window.width = 30;
+      window.width = 25;
     };
+
+    fugitive.enable = true;
     undotree.enable = true;
-    vimtex.enable = true;
+    toggleterm = {
+      enable = true;
+      direction = "float";
+      hideNumbers = true;
+      openMapping = "<C-e>";
+    };
+    vimtex = {
+      enable = true;
+      viewMethod = "zathura_simple";
+    };
     rainbow-delimiters.enable = true;
   };
 
-  colorschemes.catppuccin.enable = true;
+  colorschemes.kanagawa = {
+    enable = true;
+    compile = true;
+    transparent = true;
+  };
+
   extraPlugins = with pkgs.vimPlugins; [
     friendly-snippets
+    ultisnips
     vim-dadbod
     vim-dadbod-ui
     vim-dadbod-completion
     bullets-vim
-    orgmode
   ];
 }

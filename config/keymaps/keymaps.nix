@@ -1,69 +1,99 @@
 { ... }: {
   globals.mapleader = " ";
-  maps = {
-    normal = {
-      "<esc>" = {
-        silent = true;
-        action = ":nohlsearch<CR>";
-      };
-      "<tab>" = {
-        silent = true;
-        action = ":BufferNext<CR>";
-      };
-      "<S-tab>" = {
-        silent = true;
-        action = ":BufferPrevious<CR>";
-      };
-      "<leader>ll" = {
-        silent = true;
-        action = ":VimtexCompile<CR>";
-        desc = "Compile latex document";
-      };
-      "<leader>x" = {
-        silent = true;
-        action = ":BufferClose<CR>";
-        desc = "Close Buffer";
-      };
-      "<leader>go" = {
-        silent = true;
-        action = ":Neogit<CR>";
-        desc = "Open Neogit";
-      };
+  keymaps = [
+    {
+      mode = "v";
+      key = "J";
+      action = ":m '>+1<CR>gv=gv";
+    }
 
-      "<C-n>" = {
-        silent = true;
-        remap = true;
-        action = ":Neotree toggle<CR>";
-      };
+    {
+      mode = "v";
+      key = "K";
+      action = ":m '<-2<CR>gv=gv";
+    }
 
-      "<leader>sp" = {
-        silent = true;
-        action = ":split<CR>";
-        desc = "Split horizontally";
-      };
+    {
+      key = "<C-d>";
+      action = "<C-d>zz";
+    }
 
-      "<leader>vp" = {
-        silent = true;
-        action = ":vsplit<CR>";
-        desc = "Split vertically";
-      };
+    {
+      key = "<C-d>";
+      action = "<C-u>zz";
+    }
 
-      "<leader>lr" = {
-        silent = true;
-        action = ":Lspsaga rename<CR>";
-        desc = "Rename definition";
-      };
+    {
+      key = "<esc>";
+      action = ":nohlsearch<CR>";
+    }
 
-      "<leader>lp" = {
-        silent = true;
-        action = ":Lspsaga preview_definition<CR>";
-        desc = "Previews definition";
-      };
-      "<leader>lf" = {
-        silent = true;
-        action = ":Format<CR>";
-        desc = "Formats buffer";
-      };
-    };
-  };
+    {
+      key = "<tab>";
+      action = ":BufferNext<CR>";
+    }
+
+    {
+      key = "<S-tab>";
+      action = ":BufferPrevious<CR>";
+    }
+
+    {
+      key = "<leader>ll";
+      action = ":VimtexCompile<CR>";
+      options.desc = "Compile latex document";
+    }
+
+    {
+      key = "<leader>x";
+      action = ":BufferClose<CR>";
+      options.desc = "Close Buffer";
+    }
+
+    {
+      key = "<leader>go";
+      action = ":Neogit<CR>";
+      options.desc = "Open Neogit";
+    }
+
+    {
+      key = "<C-n>";
+      action = ":Neotree toggle<CR>";
+    }
+
+    {
+      key = "<leader>sp";
+      action = ":split<CR>";
+      options.desc = "Split horizontally";
+    }
+
+    {
+      key = "<leader>vp";
+      action = ":vsplit<CR>";
+      options.desc = "Split vertically";
+    }
+
+    {
+      key = "<leader>lr";
+      action = ":Lspsaga rename<CR>";
+      options.desc = "Rename definition";
+    }
+
+    {
+      key = "<leader>lp";
+      action = ":Lspsaga preview_definition<CR>";
+      options.desc = "Previews definition";
+    }
+
+    {
+      key = "<leader>lf";
+      action = ":Format<CR>";
+      options.desc = "Formats buffer";
+    }
+
+    {
+      key = "<leader>g";
+      action = ":Git";
+    }
+  ];
 }

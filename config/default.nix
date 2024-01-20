@@ -9,15 +9,14 @@
       number = true;
       relativenumber = true;
       conceallevel = 2;
-      clipboard = {
-        register = "unnamedplus";
-        providers = {
-          wl-copy.enable = true;
-          xclip.enable = true;
-        };
-      };
       tabstop = 2;
       shiftwidth = 2;
+      scrolloff = 8;
+      updatetime = 50;
+      termguicolors = true;
+
+      hlsearch = false;
+      incsearch = true;
     };
 
     globals = {
